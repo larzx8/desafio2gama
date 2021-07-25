@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li 
+{
+list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+}
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2
+{
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+.content .textBox h2 span
+{
+    color: #380050;    
+    font-size: 1em;
+    font-weight: 900;    
+}
+
+.content .textBox p
+{
+    color: #333;
+    margin-top: 20px
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 8px 20px;
+    background: #380050;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img
+{
+    max-width: 800px;
+}
+.thumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    
+}
+.thumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover
+{
+    transform: translateY(-15px);
+}
+.thumb li img
+{
+    max-width: 160px;
+}
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background: #380050;
+    /*clip-path: circle(600px at right 800px);*/
+    clip-path: circle(24.7% at 92% 52%);
+}
+
+.content .imgBox1
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+@media(max-width: 991px)
+{
+    header
+    {
+        padding: 20px;
+    }
+    header .logo
+    {
+        max-width: 60px;
+    }
+    header ul 
+    {
+        display: none;
+    }
+    section
+    {
+        padding: 20px 20px 120px;
+    }
+    .content
+    {
+        flex-direction: column;
+        margin-top: 100px;        
+    }
+    .content .textBox h2 
+    {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    .content .textBox
+    {
+        max-width: 100%;
+    }
+    .content .imgBox
+    {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .content .imgBox img 
+    {
+        max-width: 250px;
+    }
+    .thumb li img 
+    {
+        max-width: 120px;
+    }
+    
+}
+    .content .textBox .container .email-icon 
+    {          
+        width: 5px;
+        height: 5px;
+        display: inline-block;  
+              
+    }
+    .content .textBox .container
+    {
+        margin-top: 10%;
+    }   
+ 
+        
+.email-box:hover > .tbox,.tbox-focus
+{
+    width: 200px;
+    padding: 0 10px;
+}
+.tbox
+{
+    width: 210px;
+    transform: 0.6s;
+}
+
+footer 
+{
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.content .textBox .container #button-submit 
+{   
+   color: #380050;
+   font-weight: 600;   
+   width: 10%; 
+}
+.content .textBox .container #button-submit:hover
+{
+    background-color: #380050;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;         
+}
+.content .textBox .container .box-letter
+{
+    border-color: #fff;
+     
+}
+header .menu 
+{
+    text-align: right;
+
+}
+.contact-adress 
+{
+    font-size: 13px;
+    font: sans-serif;
+    display: flex;
+    margin-left: 100px;
+    
+}

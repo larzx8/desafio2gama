@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="./app/script.js"></script>
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+    <div class="layout-cadastro">
+
+        <form onSubmit="return false">
+
+            <div class="logomarca"><img src="src/assets/images/logotest.gif" alt="" width="200" height="auto"></div>
+            <div class=cadastrousuario><b>CADASTRO DO USUÁRIO</div></b><br>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" placeholder="Digite aqui" required><br>
+            <label for="surname">Sobrenome:</label><br>
+            <input type="text" name="surname" id="surname" placeholder="Digite aqui" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="tel">Telefone:</label><br>
+            <input type="tel" name="tel" id="tel"><br>
+            <label for="birth">Data de Nascimento:</label><br>
+            <input type="date" name="birth" id="birth" required><br>
+            <label for="cpf">CPF:</label><br>
+            <input type="number" name="cpf" id="cpf" required><br>
+            <label for="address">Endereço:</label><br>
+            <input type="text" name="address" id="address" required><br>
+            <label for="city">Cidade:</label><br>
+            <input type="text" name="city" id="city" required><br>
+            <label for="state">Estado:</label><br>
+            <select id="state" name="state">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select><br>
+            <label for="zipcode">CEP:</label><br>
+            <input type="number" name="zipcode" id="zipcode"><br>
+            <div class="popup">
+                <span class="popuptext" id="myPopup">Cadastro realizado com sucesso!</span>
+            <button type="submit" class="finalizar" onclick="validar()">Cadastrar</button>
+        </div>
+        </form>
+    </div>
+   
+</body>
+
+</html>

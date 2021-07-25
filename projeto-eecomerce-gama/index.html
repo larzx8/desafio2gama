@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Mega Promoção da loja gamer</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="src/assets/images/logotest.gif"></a>
+
+            <ul>
+                <div class="cadastro">
+                    <li><a href="cadastro2.html" target="_blank">Cadastrar </a></li>
+
+
+                </div>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Comemorando o primeiro ano da <span>True Gamers</span></h2>
+                <a href="#">Mega Promoções de Aniversário <img
+                        src="https://emojipedia-us.s3.amazonaws.com/source/skype/295/partying-face_1f973.png"
+                        height="25" width="25" alt="party"></a>
+                <div class="container">
+
+                    <form action="" class="form">
+                        <h1>Newsletter</h1>
+                        <p>Com seu email salvo você ficará por dentro das nossas Mega Promoções de jogos lançamentos! É
+                            isso mesmo!</p>
+
+                    </form>
+
+
+
+                    <div id="newsletter">
+                        <input type="text" class="box-letter" id="nome" placeholder="Registre seu Nome" required />
+                        <input type="text" class="box-letter" id="e-mail" placeholder="Cadastre seu e-mail" required />
+
+                        <button id="button-submit" onclick="saveForm()">Enviar</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="imgBox">
+                <img src="src/assets/images/kh-series2.png" class="kingdom-hearts">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="src/assets/images/thumb1.png"
+                    onclick="imgSlider('src/assets/images/kh-series2.png');changeCircleColor('#380050')"></li>
+            <li><img src="src/assets/images/thumb2.png"
+                    onclick="imgSlider('src/assets/images/cyberpunk20772.png'); changeCircleColor('#FFD523')"></li>
+            <li><img src="src/assets/images/thumb3.png"
+                    onclick="imgSlider('src/assets/images/star-warstest2.png'); changeCircleColor('#80332F')"></li>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.kingdom-hearts').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+
+    <div class="contact-adress">Horário de atendimento: 08:00 às 20:00.<br>
+        Endereço: Rua , 1321 - 1º Andar<br>
+        Centro - Sonho (MG) - CEP: 1111-111<br>
+        Central SAC: (00) 01010-0101<br>
+        E-mail: faleconosco@contato.com</div>
+
+    <footer>Desenvolvido por <a href="https://github.com/larzx8" target="_blank">Alisson de Souza</a></footer>
+</body>
+
+</html>

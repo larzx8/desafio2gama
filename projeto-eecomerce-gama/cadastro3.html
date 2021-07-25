@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app/script.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <div class="layout-cadastro">
+
+        <form onSubmit="return false">
+
+            <div class="logomarca"><img src="src/assets/images/logotest.gif" alt="" width="200" height="auto"></div>
+            <div class=cadastrousuario><b>CADASTRO DO PRODUTO</div></b><br>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" placeholder="Digite aqui" required><br>
+            <label for="developed">Desenvolvedor:</label><br>
+            <input type="text" name="developed" id="developed" placeholder="Digite aqui" required><br>
+            <label for="text">Distribuidora:</label><br>
+            <input type="text" name="dist" id="dist" placeholder="Digite aqui" required><br>
+            <label for="date" >Data de lançamento:</label><br>
+            <input type="date" name="date" id="date" placeholder="Digite aqui"><br>            
+            <label for="gender">Gênero:</label><br>
+            <input type="text" name="gender" id="gender" required placeholder="Digite aqui"><br>
+            <label for="price">Valor:</label><br>
+            <input type="number" name="price" id="price" required placeholder="Digite aqui"><br>
+            <label for="qntd">Quantidade:</label><br>
+            <input type="number" name="qntd" id="qntd" required placeholder="Digite aqui"><br>            
+            
+            <div class="popup">
+                <span class="popuptext" id="myPopup">Cadastro realizado com sucesso!</span>
+            <button type="submit" class="finalizar" onclick="validarProd()">Cadastrar</button>
+        </div>
+        
+        </form>
+    </div>
+       
+    </div>
+    
+</body>
+</html>
